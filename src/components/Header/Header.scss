@@ -1,0 +1,35 @@
+@import "../../colors.scss";
+
+.header-container{
+    background-color:$violet;
+    padding: 10px 20px;
+    height: 75px;
+    
+
+
+    
+    header{
+        color: $white;
+        height: 100%;
+        display: flex;
+        font-family: "Rubik", sans-serif;
+        justify-content: space-between;
+        align-items: center;
+
+        .links{
+            display: flex;
+            gap:2rem;
+        }
+        a{
+            display: flex;
+
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: $white ;
+        }
+        a:hover{
+            color:$grey;
+        }
+    }
+} 

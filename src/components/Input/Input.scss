@@ -1,0 +1,90 @@
+@import "../../colors.scss";
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: $background;
+
+
+    padding: 20px;
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 400px; 
+        margin-bottom: 12%;
+        
+        h2 {
+            font-family: 'Rubik', sans-serif;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .title, .subject {
+            margin-bottom: 15px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        input[type="text"], select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        
+        input[type="text"]:focus, select:focus {
+            border-color: $violet;
+            outline: none;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: $violet;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            align-self: center;
+        }
+        
+        button:hover {
+            background-color: #5f2f8f;
+        }
+
+        button:active{
+            scale: 0.9;
+            transition: 0.01s ease-in-out;
+        }
+        
+        select {
+            font-family: 'Rubik', sans-serif;
+            background-color: white;
+        }
+        
+        select:focus {
+            background-color: #f7f7f7;
+        }
+    }
+}
